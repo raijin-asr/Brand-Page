@@ -1,24 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
 
 :root {
   --red: #d01c28;
   --gray: #2e2e2e;
+  --white: #fff;
 }
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins", sans-serif;
 }
 
+/* NAVIGATION */
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 72px;
   margin: 0 auto;
-  align-items: center;
+  padding: 0 16px;
+  max-width: 1280px;
+}
+
+.logo img {
+  height: 100px;  /* Fixed height */
+  width: 190px;   /* Fixed width */
+  transition: all 0.3s ease;
 }
 
 nav ul {
@@ -27,65 +39,206 @@ nav ul {
   gap: 24px;
 }
 
+nav ul li {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--gray);
+}
+
 button {
-    all: unset;
-    padding: 6px 16px;
-    background: var(--red);
-    height: 32px;
-    color: white;
-    font-weight: 500;
-  }
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hamburger Menu (for tablets) */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-menu.active {
+  display: block;
+}
 
 .container {
-    margin: 0 auto;
-    max-width: 1280px;
-  }
+  margin: 0 auto;
+  max-width: 1280px;
+}
 
 .bodyDiv {
-    display: flex;
-    align-items: center;
-    height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 72px);
+  padding: 0 16px;
+}
+
+.bodyDiv-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.bodyDiv h1 {
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 108px;
+}
+
+.bodyDiv p {
+  font-weight: 600;
+  color: var(--gray);
+  max-width: 400px;
+}
+
+.bodyDiv-btn {
+  display: flex;
+  gap: 40px;
+}
+
+.bodyDiv-btn button {
+  font-size: 24px;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid gray;
+}
+
+.socialDiv p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
+.bodyDiv-image img {
+  width: 400px; /* Default size for large screens */
+  height: auto;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* For tablets and medium screens */
+@media (max-width: 1024px) {
+  nav {
+    padding: 0 24px;
   }
 
-  .bodyDiv-content {
-    display: flex;
+  nav ul {
+    display: none;
     flex-direction: column;
-    gap: 36px;
+    gap: 12px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo img {
+    width: 150px; /* Adjusted logo size for tablet screens */
+  }
+
+  .bodyDiv {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 32px;
   }
 
   .bodyDiv h1 {
-    font-weight: 800;
-    line-height: 102px;
-    font-size: 108px;
+    font-size: 72px;
+    line-height: 84px;
   }
 
   .bodyDiv p {
-    font-weight: 600;
-    color: var(--gray);
-    max-width: 400px;
+    font-size: 18px;
+    max-width: 100%;
   }
-  
+
   .bodyDiv-btn {
-    display: flex;
-    gap: 40px;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .bodyDiv-btn button {
-    font-size: 24px;
+    font-size: 20px;
   }
 
-  .secondary-btn {
-    background: transparent;
-    color: var(--gray);
-    border: 1px solid gray;
+  .bodyDiv-image img {
+    width: 300px; /* Reduce Messi image size for tablets */
+    margin: 24px 0;
   }
-  
-  .socialDiv p {
-    font-size: 14px;
-    margin-bottom: 8px;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 16px;
   }
 
-  .social-icons {
-    display: flex;
+  nav ul {
     gap: 16px;
   }
+
+  .logo img {
+    width: 100px; /* Adjust logo size for mobile screens */
+  }
+
+  button {
+    font-size: 14px;
+    height: 28px;
+  }
+
+  .bodyDiv {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .bodyDiv h1 {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  .bodyDiv p {
+    font-size: 16px;
+  }
+
+  .bodyDiv-btn button {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .bodyDiv-image img {
+    width: 100%; /* Full width for body image on mobile */
+  }
+}
