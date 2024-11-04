@@ -4,23 +4,23 @@ const Body = () => {
       <div className="bodyDiv-content">
         <h1>AMEER RAI</h1>
         <p>
-          Welcome to my Brand Page. I am happy to see you here. 
+          Welcome to my Brand Page. I am happy to see you here.
         </p>
 
         <div className="bodyDiv-btn">
-          <button>Read More </button>
+          <button>Read More</button>
           <button className="secondary-btn">Donate</button>
         </div>
 
         <div className="socialDiv">
-          <p>My Social Media</p>
+          <p>Reach me at:</p>
 
           <div className="social-icons">
             <a href="#" target="_blank" rel="noreferrer">
-              <img src="images/icon.png" alt="Facebook" />
+              <i className="fab fa-facebook fa-2x"></i>
             </a>
             <a href="#" target="_blank" rel="noreferrer">
-              <img src="images/icon.png" alt="LinkedIn" />
+              <i className="fab fa-linkedin fa-2x"></i>
             </a>
           </div>
         </div>

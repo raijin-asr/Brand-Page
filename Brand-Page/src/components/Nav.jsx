@@ -21,9 +21,9 @@ const Nav = () => {
       {/* Nav items */}
       <ul className={isMenuOpen ? "active" : ""}>
         <li>Home</li>
+        <li>Contact</li>
         <li>About</li>
         <li>Services</li>
-        <li>Contact</li>
       </ul>
 
       <button>Login</button>

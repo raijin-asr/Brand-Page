@@ -7,3 +7,4 @@ Brand Page Project using React
     Day 3: Add Nav and body div to app.jsx, and style to app.
     Day 4: Organized nav and body to component and added new images
     Day 5: Added media queries to app.css for responsiveness
+    Day 6: Added Fontawesome to social accounts, and some changes

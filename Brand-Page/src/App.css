@@ -2,7 +2,7 @@
 
 :root {
   --red: #d01c28;
-  --gray: #2e2e2e;
+  --green: #2af40a;
   --white: #fff;
 }
 
@@ -31,6 +31,7 @@ nav {
   height: 100px;  /* Fixed height */
   width: 190px;   /* Fixed width */
   transition: all 0.3s ease;
+  margin-top: 25px;
 }
 
 nav ul {
@@ -109,8 +110,8 @@ button {
 
 .secondary-btn {
   background: transparent;
-  color: var(--gray);
-  border: 1px solid gray;
+  color: var(--green);
+  border: 1px solid rgb(15, 233, 160);
 }
 
 .socialDiv p {
