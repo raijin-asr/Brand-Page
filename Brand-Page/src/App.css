@@ -16,58 +16,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* NAVIGATION */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 72px;
-  margin: 0 auto;
-  padding: 0 16px;
-  max-width: 1280px;
-}
-
-.logo img {
-  height: 100px;  /* Fixed height */
-  width: 190px;   /* Fixed width */
-  transition: all 0.3s ease;
-  margin-top: 25px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 24px;
-}
-
-nav ul li {
-  cursor: pointer;
-  font-weight: 500;
-  color: var(--gray);
-}
-
-button {
-  all: unset;
-  padding: 6px 16px;
-  background: var(--red);
-  height: 32px;
-  color: white;
-  font-weight: 500;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-/* Hamburger Menu (for tablets) */
-.hamburger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.nav-menu.active {
-  display: block;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -141,32 +89,8 @@ button {
   transition: all 0.3s ease;
 }
 
-/* MEDIA QUERIES FOR RESPONSIVENESS */
-
 /* For tablets and medium screens */
 @media (max-width: 1024px) {
-  nav {
-    padding: 0 24px;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .logo img {
-    width: 150px; /* Adjusted logo size for tablet screens */
-  }
-
   .bodyDiv {
     flex-direction: column;
     text-align: center;
@@ -201,25 +125,6 @@ button {
 
 /* For mobile screens */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 12px;
-    padding: 0 16px;
-  }
-
-  nav ul {
-    gap: 16px;
-  }
-
-  .logo img {
-    width: 100px; /* Adjust logo size for mobile screens */
-  }
-
-  button {
-    font-size: 14px;
-    height: 28px;
-  }
-
   .bodyDiv {
     flex-direction: column;
     padding: 16px;

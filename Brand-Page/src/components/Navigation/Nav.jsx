@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './Nav.module.css';
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,18 +9,18 @@ const Nav = () => {
   };
 
   return (
-    <nav className="container">
-      <div className="logo">
+    <nav className={`${styles.navigation} container`}>
+      <div className={styles.logo}>
         <img src="images/logoA.png" alt="Logo" />
       </div>
 
       {/* Hamburger menu icon */}
-      <div className="hamburger" onClick={toggleMenu}>
+      <div className={styles.hamburger} onClick={toggleMenu}>
         &#9776;
       </div>
 
       {/* Nav items */}
-      <ul className={isMenuOpen ? "active" : ""}>
+      <ul className={isMenuOpen ? styles.active : ""}>
         <li>Home</li>
         <li>Contact</li>
         <li>About</li>

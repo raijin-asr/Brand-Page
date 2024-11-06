@@ -1,5 +1,5 @@
 import './App.css'
-import Nav from './components/Nav'
+import Nav from './components/Navigation/Nav'
 import Body from './components/Body'
 
 const App =() => {
