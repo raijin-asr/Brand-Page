@@ -1,6 +1,6 @@
 import './App.css'
 import Nav from './components/Navigation/Nav'
-import Body from './components/Body'
+import Body from './components/Body/Body'
 
 const App =() => {
   return (

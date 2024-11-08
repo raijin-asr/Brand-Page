@@ -1,21 +1,22 @@
+import styles from './Body.module.css';
+
 const Body = () => {
   return (
-    <main className="bodyDiv container">
-      <div className="bodyDiv-content">
+    <main className={`${styles.bodyDiv} container`}>
+      <div className={styles.bodyDivContent}>
         <h1>AMEER RAI</h1>
         <p>
           Welcome to my Brand Page. I am happy to see you here.
         </p>
 
-        <div className="bodyDiv-btn">
+        <div className={styles.bodyDivBtn}>
           <button>Read More</button>
-          <button className="secondary-btn">Donate</button>
+          <button className={styles.secondaryBtn}>Donate</button>
         </div>
 
-        <div className="socialDiv">
+        <div className={styles.socialDiv}>
           <p>Reach me at:</p>
-
-          <div className="social-icons">
+          <div className={styles.socialIcons}>
             <a href="#" target="_blank" rel="noreferrer">
               <i className="fab fa-facebook fa-2x"></i>
             </a>
@@ -25,7 +26,7 @@ const Body = () => {
           </div>
         </div>
       </div>
-      <div className="bodyDiv-image">
+      <div className={styles.bodyDivImage}>
         <img src="images/messi1.jpg" alt="bodyDiv-image" />
       </div>
     </main>

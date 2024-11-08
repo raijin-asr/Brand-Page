@@ -9,3 +9,4 @@ Brand Page Project using React
     Day 5: Added media queries to app.css for responsiveness
     Day 6: Added Fontawesome to social accounts, and some changes
     Day 7: Using Dynamic Class Syntax, and CSS module in Nav component
+    Day 8: Applying module based css and dynamic class in Body.jsx
