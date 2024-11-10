@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Nav.module.css';
 
 const Nav = () => {
@@ -21,10 +22,10 @@ const Nav = () => {
 
       {/* Nav items */}
       <ul className={isMenuOpen ? styles.active : ""}>
-        <li>Home</li>
-        <li>Contact</li>
-        <li>About</li>
-        <li>Services</li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        {/* <li><Link to="/about">About</Link></li>
+        <li><Link to="/services">Services</Link></li> */}
       </ul>
 
       <button>Login</button>

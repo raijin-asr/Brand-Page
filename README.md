@@ -10,3 +10,4 @@ Brand Page Project using React
     Day 6: Added Fontawesome to social accounts, and some changes
     Day 7: Using Dynamic Class Syntax, and CSS module in Nav component
     Day 8: Applying module based css and dynamic class in Body.jsx
+    Day 9: App-level routing using react router in Nav.jsx
