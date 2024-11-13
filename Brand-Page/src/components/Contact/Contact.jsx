@@ -4,9 +4,9 @@ const Contact = () => {
     return (
         <div className={`${styles.contactDiv} container`}>
             <div className={styles.contactDivContent}>
-                <h1>Contact Us</h1>
+                <h1>Contact me. 📞</h1>
                 <p>
-                    We are happy to see you here. Please feel free to reach out to us.
+                    Please feel free to reach out to me. 😁 Fill out the form and I will get back to you as soon as possible. 🚀
                 </p>
 
                 <div className={styles.contactDivForm}>
