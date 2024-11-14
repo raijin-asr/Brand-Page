@@ -13,3 +13,4 @@ Brand Page Project using React
     Day 9: App-level routing using react router in Nav.jsx
     Day10: Added Contact page with proper routing
     Day11: Updating, optimizing styles, content of contact page
+    Day12: Optimized style of Nav, removed other unneeded menus
