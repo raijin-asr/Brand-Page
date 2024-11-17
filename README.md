@@ -14,3 +14,4 @@ Brand Page Project using React
     Day10: Added Contact page with proper routing
     Day11: Updating, optimizing styles, content of contact page
     Day12: Optimized style of Nav, removed other unneeded menus
+    Day13: Added Footer section
