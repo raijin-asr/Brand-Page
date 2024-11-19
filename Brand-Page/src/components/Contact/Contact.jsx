@@ -1,10 +1,11 @@
 import styles from './Contact.module.css';
+import {MdOutlinePhoneCallback} from 'react-icons/md';
 
 const Contact = () => {
     return (
         <div className={`${styles.contactDiv} container`}>
             <div className={styles.contactDivContent}>
-                <h1>Contact me. 📞</h1>
+                <h1>Contact me <MdOutlinePhoneCallback fontSize="26px"/></h1>
                 <p>
                     Please feel free to reach out to me. 😁 Fill out the form and I will get back to you as soon as possible. 🚀
                 </p>

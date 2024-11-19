@@ -15,3 +15,4 @@ Brand Page Project using React
     Day11: Updating, optimizing styles, content of contact page
     Day12: Optimized style of Nav, removed other unneeded menus
     Day13: Added Footer section
+    Day14: Made Contact page responsive using media queries
