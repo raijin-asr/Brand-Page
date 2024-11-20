@@ -1,15 +1,60 @@
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Changed to ensure proper placement */
+  bottom: 0;
+  width: 100%;
+}
+
+.footerContent {
+  font-size: 0.9rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.footerContent a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerContent a:hover {
+  color: #f00; /* Highlight on hover */
+}
+
+/* Responsive Design */
+
+/* For tablets */
+@media (max-width: 1024px) {
+  .footer {
+      padding: 15px;
   }
-  
+
   .footerContent {
-    font-size: 0.9rem;
-    color: #bbb;
+      font-size: 0.85rem;
   }
-  
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .footer {
+      padding: 10px;
+  }
+
+  .footerContent {
+      font-size: 0.8rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .footer {
+      padding: 8px;
+  }
+
+  .footerContent {
+      font-size: 0.75rem;
+  }
+}

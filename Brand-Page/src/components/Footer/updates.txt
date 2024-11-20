@@ -1,0 +1,147 @@
+import React from 'react';
+import styles from './Footer.module.css';
+import { IoMdHeartHalf } from 'react-icons/io';
+
+const Footer = (props) => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.footerContainer}>
+        <div className={styles.footerContent}>
+          <p>
+            &copy; <a href="https://ameersampangrai.com.np">Raijin</a> 2024.{' '}
+            <IoMdHeartHalf fontSize="20px" color="red" /> All rights reserved.
+          </p>
+        </div>
+        {/* Scroll to top button */}
+        <button onClick={scrollToTop} className={styles.toTopButton}>
+          {props.icon} {props.text}
+        </button>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
+
+
+
+
+----------------------------------
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Changed to ensure proper placement */
+  bottom: 0;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerContent {
+  font-size: 0.9rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.footerContent a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerContent a:hover {
+  color: #f00; /* Highlight on hover */
+}
+
+.toTopButton {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.toTopButton:hover {
+  background-color: #555;
+}
+
+/* Responsive Design */
+
+/* For tablets */
+@media (max-width: 1024px) {
+  .footer {
+      padding: 15px;
+  }
+
+  .footerContent {
+      font-size: 0.85rem;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .footer {
+      padding: 10px;
+  }
+
+  .footerContent {
+      font-size: 0.8rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .footer {
+      padding: 8px;
+  }
+
+  .footerContent {
+      font-size: 0.75rem;
+  }
+}
+
+-------------------------------------------
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Nav from './components/Navigation/Nav';
+import Body from './components/Body/Body';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import { LuArrowUpFromDot } from "react-icons/lu";
+
+const App = () => {
+  return (
+    <Router>
+      <div>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Body />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        {/* Pass props to Footer */}
+        <Footer text="To Top" icon={<LuArrowUpFromDot />} />
+      </div>
+    </Router>
+  );
+};
+
+export default App;

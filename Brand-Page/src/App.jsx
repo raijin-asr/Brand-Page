@@ -1,24 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css'
-import Nav from './components/Navigation/Nav'
-import Body from './components/Body/Body'
+import './App.css';
+import Nav from './components/Navigation/Nav';
+import Body from './components/Body/Body';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
-
-const App =() => {
+const App = () => {
   return (
-    <div>
-      <Router>
+    <Router>
+      <div>
         <Nav />
         <Routes>
           <Route path="/" element={<Body />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
-      </Router>      
-    </div>
+        <Footer /> 
+      </div>
+    </Router>
   );
 };
 
-export default App
+export default App;
