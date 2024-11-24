@@ -5,6 +5,7 @@ import Nav from './components/Navigation/Nav';
 import Body from './components/Body/Body';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import { LuArrowUpFromDot } from "react-icons/lu";
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
           <Route path="/" element={<Body />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer /> 
+        {/* Pass props to Footer */}
+        <Footer text="To Top" icon={<LuArrowUpFromDot />} />
       </div>
     </Router>
   );

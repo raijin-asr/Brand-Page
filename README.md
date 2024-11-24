@@ -17,3 +17,4 @@ Brand Page Project using React
     Day13: Added Footer section
     Day14: Made Contact page responsive using media queries
     Day15: (filtered) Added react icons to footer and made footer responsive
+    Day16: Added "To Top" button in footer

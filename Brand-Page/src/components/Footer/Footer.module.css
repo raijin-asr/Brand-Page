@@ -6,6 +6,13 @@
   position: relative; /* Changed to ensure proper placement */
   bottom: 0;
   width: 100%;
+  margin-top: 10px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footerContent {
@@ -22,6 +29,23 @@
 
 .footerContent a:hover {
   color: #f00; /* Highlight on hover */
+}
+
+.toTopButton {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.toTopButton:hover {
+  background-color: #555;
 }
 
 /* Responsive Design */
