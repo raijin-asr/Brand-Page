@@ -40,10 +40,6 @@ body {
     gap: 40px;
 }
 
-.bodyDivBtn button {
-    font-size: 24px;
-}
-
 .secondaryBtn {
     background: transparent;
     color: var(--green);

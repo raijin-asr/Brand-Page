@@ -1,4 +1,6 @@
 import styles from './Body.module.css';
+import Button from "../Button/Button";
+import {MdOutlinePhoneCallback} from 'react-icons/md';
 
 const Body = () => {
   return (
@@ -10,8 +12,14 @@ const Body = () => {
         </p>
 
         <div className={styles.bodyDivBtn}>
-          <button>Read More</button>
-          <button className={styles.secondaryBtn}>Donate</button>
+          <Button 
+          isOutline={false}
+          text="Read More" 
+          icon={<MdOutlinePhoneCallback/>}/>
+          <Button 
+          isOutline={true}
+          text="Donate" 
+          icon={<MdOutlinePhoneCallback/>}/>
         </div>
 
         <div className={styles.socialDiv}>
