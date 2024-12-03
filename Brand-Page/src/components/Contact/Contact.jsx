@@ -2,6 +2,15 @@ import styles from './Contact.module.css';
 import {MdOutlinePhoneCallback} from 'react-icons/md';
 
 const Contact = () => {
+    const onSubmitForm = (e) => {
+        let name, email, message;
+        e.preventDefault();
+        name = e.target[0].value;
+        email = e.target[1].value;
+        message = e.target[2].value;
+
+        alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+    };
     return (
         <div className={`${styles.contactDiv} container`}>
             <div className={styles.contactDivContent}>
@@ -11,7 +20,7 @@ const Contact = () => {
                 </p>
 
                 <div className={styles.contactDivForm}>
-                    <form>
+                    <form onSubmit={onSubmitForm}>
                         <input type="text" placeholder="Name" />
                         <input type="email" placeholder="Email" />
                         <textarea placeholder="Message"></textarea>

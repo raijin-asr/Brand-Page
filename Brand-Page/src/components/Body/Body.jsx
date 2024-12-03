@@ -3,6 +3,9 @@ import Button from "../Button/Button";
 import {MdOutlinePhoneCallback} from 'react-icons/md';
 
 const Body = () => {
+  const onReadMoreClick = () => {
+    alert("Visit https://ameersampangrai.com.np/ for more details.");
+  };
   return (
     <main className={`${styles.bodyDiv} container`}>
       <div className={styles.bodyDivContent}>
@@ -13,10 +16,12 @@ const Body = () => {
 
         <div className={styles.bodyDivBtn}>
           <Button 
+          onClick={onReadMoreClick}
           isOutline={false}
           text="Read More" 
           icon={<MdOutlinePhoneCallback/>}/>
           <Button 
+          onClick={() => alert("Thank you for initiating Donation!")}
           isOutline={true}
           text="Donate" 
           icon={<MdOutlinePhoneCallback/>}/>
