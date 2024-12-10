@@ -20,6 +20,7 @@ Brand Page Project using React
     Day16: Added "To Top" button in footer
     Day17: Applied props property for button component
     Day18: Applied button events, alert to form submission
+    Day19: Implemented useState in form submission and created cardbox
 
 
 <h1>Screenshots:</h1>
